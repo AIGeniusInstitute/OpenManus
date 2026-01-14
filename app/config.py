@@ -290,6 +290,7 @@ class Config:
             sandbox_settings = SandboxSettings(**sandbox_config)
         else:
             sandbox_settings = SandboxSettings()
+
         daytona_config = raw_config.get("daytona", {})
         if daytona_config:
             daytona_settings = DaytonaSettings(**daytona_config)
